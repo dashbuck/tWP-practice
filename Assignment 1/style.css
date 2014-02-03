@@ -1,0 +1,101 @@
+<!-- Fixes HTML5 for old dumb browsers. From http://www.w3.org/wiki/HTML_structural_elements-->
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  display: block;
+}
+
+#container {
+	width: 950px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #7080D7;
+	z-index: -1; <!-- w3:"The z-index property specifies the stack order of an element (which element
+	should be placed in front of, or behind, the others)."-->
+	
+}
+
+#header {
+	float:top;
+	padding-top: -50;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 2em;
+	text-align: center;
+}
+
+#menu {
+	float: top;
+	background-color: #206876;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+#menu ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width: 950px;
+}
+
+#menu ul li {
+	display: inline;
+	border: 2px solid black;
+	background-color: #4E10AE;
+	border-radius: 10px;
+	padding: 5px;
+	float: left;
+	margin-left: 26px;
+	margin-right: 26px;
+	text-align: center;
+	
+}
+
+#menu ul li a {
+	display: block;
+	width: 119px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#content {
+	width: 850px;
+	background-color: #071871;
+	float: left;
+}
+
+#sidebar {
+	width: 100px;
+	background-color: #37B6CE;
+	float: right;
+	height: : 100%;
+}
+
+#footer {
+	clear: both;
+	background-color: #7D44D6;
+	
+}
+
+
+
+
+/*
+.coin {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: gray;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: white;
+	margin: 10px;
+	display: inline-block;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+div h1 {
+	color:green;
+	background-color: #7D44D6;
+	font-weight: bold;
+}
