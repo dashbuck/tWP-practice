@@ -1,4 +1,4 @@
-<!-- Fixes HTML5 for old dumb browsers. From http://www.w3.org/wiki/HTML_structural_elements-->
+/*Fixes HTML5 for old dumb browsers. From http://www.w3.org/wiki/HTML_structural_elements*/
 article, section, aside, hgroup, nav, header, footer, figure, figcaption {
   display: block;
 }
@@ -7,26 +7,24 @@ article, section, aside, hgroup, nav, header, footer, figure, figcaption {
 	width: 950px;
 	margin-left:auto;
 	margin-right:auto;
-	background-color: #7080D7;
-	z-index: -1; <!-- w3:"The z-index property specifies the stack order of an element (which element
-	should be placed in front of, or behind, the others)."-->
-	
+	z-index: -1; /*w3:"The z-index property specifies the stack order of an element (which element
+	should be placed in front of, or behind, the others)."*/	
 }
 
 #header {
 	float:top;
 	padding-top: -50;
-	background-color: #000000;
-	color: #FFFFFF;
-	font-size: 2em;
-	text-align: center;
+	height: 180px;
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-image: url('file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/Snowflake_Blue_Nova.jpg');
 }
 
 #menu {
 	float: top;
-	background-color: #206876;
-	margin-left: 12px;
-	margin-right: 12px;
+	margin-left: 22px;
+	margin-right: 22px;
+	padding: 15px 0px 50px 0px;
 }
 
 #menu ul {
@@ -38,44 +36,67 @@ article, section, aside, hgroup, nav, header, footer, figure, figcaption {
 
 #menu ul li {
 	display: inline;
-	border: 2px solid black;
-	background-color: #4E10AE;
+	border: 2px solid #015666;
+	background-color: #5FBDCE;
 	border-radius: 10px;
 	padding: 5px;
 	float: left;
-	margin-left: 26px;
-	margin-right: 26px;
-	text-align: center;
-	
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;	
 }
 
 #menu ul li a {
 	display: block;
-	width: 119px;
+	width: 110;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #015666;
+}
+
+#menu a:hover {
+	color: black;
 }
 
 #content {
-	width: 850px;
-	background-color: #071871;
+	height: auto;
+	width: 80%;
+	max-width: 760px;
+	background-color: #7080D7;
 	float: left;
+	border-radius: 5px;
 }
 
 #sidebar {
-	width: 100px;
+	height: auto;
+	width: 20%;
+	max-width: 190px;
 	background-color: #37B6CE;
 	float: right;
-	height: : 100%;
+	height: 547px;
+	border-radius: 5px;
 }
 
 #footer {
+	position:relative;
+	top:5px;
 	clear: both;
-	background-color: #7D44D6;
 	
+	border-radius: 5px;
+	background-color: #956BD6;
+	
+	-moz-column-count:4; /* Firefox */
+	-webkit-column-count:4; /* Safari and Chrome */
+	column-count:4;
+	
+	-moz-column-rule:3px outset #FFFFFF; /* Firefox */
+	-webkit-column-rule:3px outset #FFFFFF; /* Safari and Chrome */
+	column-rule:3px outset #FFFFFF;
+} 
+
+.current {
+	font-weight: bold;
+	background-color: #white;
 }
-
-
 
 
 /*

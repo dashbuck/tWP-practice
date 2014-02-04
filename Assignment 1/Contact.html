@@ -1,17 +1,126 @@
 <!DOCTYPE html>
+<!--Fixes HTML5 for stupid old browsers - might need to be in CSS file instead? http://www.w3.org/wiki/HTML_structural_elements unclear. -->
+<script>
+    document.createElement('article');
+    document.createElement('section');
+    document.createElement('aside');
+    document.createElement('hgroup');
+    document.createElement('nav');
+    document.createElement('header'); 
+    document.createElement('footer');
+    document.createElement('figure');
+    document.createElement('figcaption'); 
+</script>
+
 <html>
     <head>
-    	<link type='text/css' rel='stylesheet' href='file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/Main.css'>
+    	<link type='text/css' rel='stylesheet' href='file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/style.css'>
 		<title>Main Page</title>
 	</head>
-	<body>
-		<div>
+	<body style="margin: 10px; padding: 10px"> <!-- w3: "When aligning elements [with float], it is 
+		always a good idea to predefine margin and padding for the <body> element. This is to avoid
+		visual differences in different browsers."-->
+		<div id="container">
+			<header id="header">
+			</header>
+			<nav id="menu">
+				<ul>
+					<li><a href="file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/Main%20Page.html">Link to Main Page</a></li>
+					<li><a href="file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/B.html">Link to page B</a></li>
+					<li class="current"><a href="file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/Contact.html">Link to Contact</a></li>
+					<li><a href="file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/D.html">Link to page D</a></li>
+					<li><a href="file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/E.html">Link to page E</a></li>
+					<li><a href="file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/F.html">Link to page F</a></li>
+				</ul>
+			</nav>
+			
+		<section id="content">
+			
 			<h1>
 				Welcome to the Main Page!
 			</h1>
-		</div>
-		<div id="sidebar">
+			<p>
+				These are the voyages of the Starship Enterprise. Its continuing mission, to explore strange
+				new worlds, to seek out new life and new civilizations, to boldly go where no one has gone 
+				before. We need to neutralize the homing signal. Each unit has total environmental control, 
+				gravity, temperature, atmosphere, light, in a protective field. Sensors show energy readings 
+				in your area. We had a forced chamber explosion in the resonator coil. Field strength has 
+				increased by 3,000 percent.
+			</p>
+
+			<p>
+				It indicates a synchronic distortion in the areas emanating triolic waves. The cerebellum, the
+				cerebral cortex, the brain stem,  the entire nervous system has been depleted of 
+				electrochemical energy. Any device like that would produce high levels of triolic waves. These
+				walls have undergone some kind of selective molecular polarization. I haven't determined if our
+				phaser energy can generate a stable field. We could alter the photons with phase discriminators.
+			</p>
+
+			<p>
+				Communication is not possible. The shuttle has no power. Using the gravitational pull of a star
+				to slingshot back in time? We are going to Starbase Montgomery for Engineering consultations 
+				prompted by minor read-out anomalies. Probes have recorded unusual levels of geological activity
+				in all five planetary systems. Assemble a team. Look at records of the Drema quadrant. Would 
+				these scans detect artificial transmissions as well as natural signals?
+			</p>
+
+			<p>
+				Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by 
+				an unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level.
+				That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex
+				corresponding to an REM state. The engineering section's critical. Destruction is imminent. Their
+				robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+			</p>
+
+			<p>
+				I have reset the sensors to scan for frequencies outside the usual range. By emitting harmonic 
+				vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators.
+				He has this ability of instantly interpreting and extrapolating any verbal communication he 
+				hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns
+				throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+			</p>			
+		</section>
+		<aside id="sidebar">
 			This is the MAGESTIC SIDEBAR
+		</aside>
+		
+		<div id="footer">
+			<p>
+			We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of 
+			bio-electronic engineering by which I see much of the EM spectrum ranging from heat 
+			and infrared through radio waves, et cetera, and forgive me if I've said and listened
+			to this a thousand times. This planet's interior heat provides an abundance of 
+			geothermal energy. We need to neutralize the homing signal.
+			</p>
+
+			<p>
+			Exceeding reaction chamber thermal limit. We have begun power-supply calibration. Force
+			fields have been established on all turbo lifts and crawlways. Computer, run a level-two
+			diagnostic on warp-drive systems. Antimatter containment positive. Warp drive within 
+			normal parameters. I read an ion trail characteristic of a freighter escape pod. The bomb
+			had a molecular-decay detonator. Detecting some unusual fluctuations in subspace frequencies.
+			</p>
+			
+			<p>
+			Communication is not possible. The shuttle has no power. Using the gravitational pull of a
+			star to slingshot back in time? We are going to Starbase Montgomery for Engineering 
+			consultations prompted by minor read-out anomalies. Probes have recorded unusual levels 
+			of geological activity in all five planetary systems. Assemble a team. Look at records 
+			of the Drema quadrant. Would these scans detect artificial transmissions as well as 
+			natural signals?
+			</p>
+
+			<p>
+			Shields up. I recommend we transfer power to phasers and arm the photon torpedoes. 
+			Something strange on the detector circuit. The weapons must have disrupted our 
+			communicators. You saw something as tasty as meat, but inorganically materialized out
+			of patterns used by our transporters. Captain, the most elementary and valuable 
+			statement in science, the beginning of wisdom, is 'I do not know.' All transporters off.
+			</p>
+
+
 		</div>
+		
+		</div> <!-- end of container -->
     </body>
 </html>
