@@ -1,122 +1,281 @@
-/*Fixes HTML5 for old dumb browsers. From http://www.w3.org/wiki/HTML_structural_elements*/
-article, section, aside, hgroup, nav, header, footer, figure, figcaption {
-  display: block;
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================================Here ends reset code================================*/
+
+/*responsive images etc*/
+img, embed, object, video {
+max-width:100%;
+    height:auto;
+}
+
+div, header, article, aside {
+	padding: 2%;
+	overflow:hidden;
+	text-overflow:clip;
+	font-family: Arial, sans-serif;
 }
 
 #container {
-	width: 950px;
+	max-width: 950px;
+	padding: 0px;
 	margin-left:auto;
 	margin-right:auto;
 	z-index: -1; /*w3:"The z-index property specifies the stack order of an element (which element
 	should be placed in front of, or behind, the others)."*/	
 }
 
-#header {
+#header{
 	float:top;
-	padding-top: -50;
-	height: 180px;
-	background-color: #FFFFFF;
-	background-repeat: no-repeat;
-	background-image: url('file:///C:/Documents%20and%20Settings/Clarity/My%20Documents/Dropbox/the%20WritingPress/Dash%20Ed%20Assignments/Assignment%201/Snowflake_Blue_Nova.jpg');
+	padding: 0%;
+	padding-top: -50px;
+	margin: 0%;
+	max-width: 100%;
+	height: auto;
+	
+	/*border: 1px solid black;*/
 }
 
-#menu {
+#menuwrapper {
+	padding: 2%;
+	max-width: 950px;
+	height: auto;
+	margin: 0%;
 	float: top;
-	margin-left: 22px;
-	margin-right: 22px;
-	padding: 15px 0px 50px 0px;
-}
-
-#menu ul {
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	width: 950px;
-}
-
-#menu ul li {
-	display: inline;
-	border: 2px solid #015666;
-	background-color: #5FBDCE;
-	border-radius: 10px;
-	padding: 5px;
 	float: left;
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 100%;
+	
+	/*border: 1px dotted black;*/
+}
+
+#listwrapper {
+	list-style-type: none;
+	display: inline;
+	padding: 2%;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	
+	/*border: 1px dotted green;*/
+	
+}
+
+.menu {
+	display: inline;
+	float: left;
+	max-width: 12%;
+	width: 12%;
+	height: auto;
+	
+	/*border: 1px dotted blue;*/
+}
+
+.menu a:hover, .menu a:focus, .current {
+	text-decoration: none;
+	border-radius: 10px;
+	border: 2px solid blue;
+	background-color: #FFFFFF;
+	color: blue;
+	font-weight: bold;
+	
+	width: 90%;
+	height: auto;
+	overflow:hidden;
+	text-overflow:clip;
+	padding: 5%;
+	float: left;
 	text-align: center;	
 }
 
-#menu ul li a {
-	display: block;
-	width: 110;
+.link {
 	text-decoration: none;
+	border-radius: 10px;
+	border: 2px solid #015666;
+	background-color: #5FBDCE;
 	color: #015666;
+	width: 90%;
+	height: auto;
+	overflow:hidden;
+	text-overflow:clip;
+	padding: 5%;
+	float: left;
+	text-align: center;	
 }
 
-#menu a:hover {
-	color: black;
+.link a:visited {
+	color: blue;
+	/*color: #015666; Come back to figuring out how to correct the color later, I suspect that handling the menu will handle that*/
+}
+
+#background {
+	background-color: #FFFFFF;
+	padding: 1%;
+	border-radius: 5px;
+	margin-bottom: 1%;
+}
+
+#evener {
+	padding: 0%;
+	/*border: 2px solid #9494B8;*/
+	border-radius: 5px;
+	height: 600px;	
 }
 
 #content {
-	height: auto;
-	width: 80%;
-	max-width: 760px;
+	max-width: 74%;
+	background-image:url("contentbg.png");
 	background-color: #7080D7;
 	float: left;
 	border-radius: 5px;
+	height: 100%;
+	margin-bottom: 1%;
+}
+
+.byline {
+	text-align: right;
+	color: #FFFFFF;
+	font-size: 10px;
+}
+
+.spacer {
+	padding: 4%;
 }
 
 #sidebar {
-	height: auto;
-	width: 20%;
-	max-width: 190px;
+	max-width: 17%;
+	background-image:url("sidebarbg.png");
 	background-color: #37B6CE;
 	float: right;
-	height: 547px;
+	border-radius: 5px;
+	height: 100%;
+}
+
+#footwrapper {
+	clear: both;
+	padding: 0%;
+	max-width: 950px;
+	margin: 0%;
+	height: 200px;
+	
 	border-radius: 5px;
 }
 
-#footer {
-	position:relative;
-	top:5px;
-	clear: both;
+.footer {
+	padding: 1%;
+	float: left;
+	width: 23%;
+	height: 100%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	
+	overflow:hidden;
+	text-overflow:clip;
 	
 	border-radius: 5px;
+	background-image:url("footerbg.png");
 	background-color: #956BD6;
 	
-	-moz-column-count:4; /* Firefox */
-	-webkit-column-count:4; /* Safari and Chrome */
-	column-count:4;
+	/* The other way to create columns:
 	
-	-moz-column-rule:3px outset #FFFFFF; /* Firefox */
-	-webkit-column-rule:3px outset #FFFFFF; /* Safari and Chrome */
-	column-rule:3px outset #FFFFFF;
+	/*-moz-column-count:4; /* Firefox */
+	/*-webkit-column-count:4; /* Safari and Chrome */
+	/*column-count:4;
+	
+	/*-moz-column-rule:3px outset #FFFFFF; /* Firefox */
+	/*-webkit-column-rule:3px outset #FFFFFF; /* Safari and Chrome */
+	/*column-rule:3px outset #FFFFFF;*/
 } 
 
-.current {
-	font-weight: bold;
-	background-color: #white;
+#cform {
+	max-width: 35%;
+	margin: 0% 30% 0% 30%;
+	padding: 2%;
+	float: right;
+	border: 2px #015666 solid;
+	background-color: #5FBDCE;
+	color: #015666;
+	border-radius: 5px;
+	vertical-align:middle;
 }
 
+#cform input{
+	border: 1px solid #5FBDCE;
+	border-radius: 5px;
+}
 
-/*
-.coin {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    background-color: gray;
+#cform textarea{
+	border: 1px solid #5FBDCE;
+	border-radius: 5px;
+	}
+		
+h1 {
 	text-align: center;
+	font-size: 36px;
 	font-weight: bold;
-	font-family: sans-serif;
-	color: white;
-	margin: 10px;
-	display: inline-block;
-	line-height: 50px;
-	font-size: 20px;
 }
 
-div h1 {
-	color:green;
-	background-color: #7D44D6;
+h2 {
+	text-align: center;
+	font-size: 20px;
 	font-weight: bold;
+}
+
+strong {
+	font-weight: bold;
+}
+
+li {
+	list-style-type: disc;
+} 
+
+.error {
+	color: #FFFFFF;
+	font-size: 15px;
+	text-align: center;
 }

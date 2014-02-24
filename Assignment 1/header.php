@@ -1,0 +1,1 @@
+<img src='Snowflake_Blue_Nova.jpg' alt='Blue Nova' />
