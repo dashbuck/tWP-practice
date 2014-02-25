@@ -23,13 +23,21 @@
 	<?php include 'header.php'; ?>
 		</header>
 	
-	<?php include 'menu.php'; ?>
+	<?php include 'testmenu.php'; ?>
 	
 	<div id="background">
 	
 	<div id="evener"> <!--content and sidebar even-er -->
 		<article id='content'>
-	<?php include 'main.php'; ?>
+	<?php
+	$page = $_GET['page'];	/* gets the variable $page */
+	if (!empty($page)) {
+		include($page);
+	} 	/* if $page has a value, include it */
+	else {
+		include('test.php');
+	} 	/* otherwise, include the default page */
+	?>
 		</article>
 		
 		<aside id='sidebar'>
