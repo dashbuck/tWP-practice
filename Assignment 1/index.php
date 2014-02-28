@@ -15,7 +15,7 @@
 <html>
     <head>
     	<link type='text/css' rel='stylesheet' href='style.css'>
-		<title>Page Title</title>
+		<?php include 'title.php'; ?>
 	</head>
 	<body>
 		<div id='container'>
@@ -23,7 +23,7 @@
 	<?php include 'header.php'; ?>
 		</header>
 	
-	<?php include 'testmenu.php'; ?>
+	<?php include 'menu.php'; ?>
 	
 	<div id="background">
 	
@@ -35,7 +35,7 @@
 		include($page);
 	} 	/* if $page has a value, include it */
 	else {
-		include('test.php');
+		include('main.php');
 	} 	/* otherwise, include the default page */
 	?>
 		</article>
