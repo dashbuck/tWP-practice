@@ -1,54 +1,23 @@
-<!DOCTYPE html>
-<!--Fixes HTML5 for stupid old browsers - might need to be in CSS file instead? http://www.w3.org/wiki/HTML_structural_elements unclear. -->
-<script>
-    document.createElement('article');
-    document.createElement('section');
-    document.createElement('aside');
-    document.createElement('hgroup');
-    document.createElement('nav');
-    document.createElement('header'); 
-    document.createElement('footer');
-    document.createElement('figure');
-    document.createElement('figcaption'); 
-</script>
+<?php include 'header.php' ?>
 
-<html>
-    <head>
-    	<link type='text/css' rel='stylesheet' href='style.css'>
-		<?php include 'title.php'; ?>
-	</head>
-	<body>
-		<div id='container'>
-		<header id='header'>
-	<?php include 'header.php'; ?>
-		</header>
+	<article id='content'>
+		<?php
+		$page = $_GET['page'];	/* gets the variable $page */
+		if (!empty($page)) {
+			include($page);
+		} 	/* if $page has a value, include it */
+		else {
+			include('main.php');
+		} 	/* otherwise, include the default page */
+		?>
+	</article>
 	
-	<?php include 'menu.php'; ?>
+<?php include 'sidebar.php'; ?>
 	
-	<div id="background">
+</div> <!--contentsidebar background div-->
 	
-	<div id="evener"> <!--content and sidebar even-er -->
-		<article id='content'>
-	<?php
-	$page = $_GET['page'];	/* gets the variable $page */
-	if (!empty($page)) {
-		include($page);
-	} 	/* if $page has a value, include it */
-	else {
-		include('main.php');
-	} 	/* otherwise, include the default page */
-	?>
-		</article>
-		
-		<aside id='sidebar'>
-	<?php include 'sidebar.php'; ?>
-		</aside>
-	</div>
-        
-        <div id='footwrapper'>
-	<?php include 'footer.php'; ?>
-		</div>
-	</div>
-	</div>
-	</body>
+<?php include 'footer.php'; ?>
+
+</div> <!--container div-->
+</body>
 </html>

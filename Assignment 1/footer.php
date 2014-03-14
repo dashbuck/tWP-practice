@@ -1,3 +1,4 @@
+<div id='footwrapper'>
 <div class='footer'>
 <h2>Title</h2>
 <p>
@@ -43,4 +44,5 @@ communicators. You saw something as tasty as meat, but inorganically materialize
 of patterns used by our transporters. Captain, the most elementary and valuable 
 statement in science, the beginning of wisdom, is 'I do not know.' All transporters off.
 </p>
+</div>
 </div>

@@ -154,27 +154,22 @@ div, header, article, aside {
 }
 
 #background {
-	background-color: #FFFFFF;
+	background-image:url("contentsidebarbg.png");
 	padding: 1%;
 	border-radius: 5px;
 	margin-bottom: 1%;
-}
-
-#evener {
-	padding: 0%;
-	/*border: 2px solid #9494B8;*/
-	border-radius: 5px;
-	height: 600px;	
+	max-width: 100%;
+	height: auto;
 }
 
 #content {
-	width: 74%;
-	max-width: 74%;
-	background-image:url("contentbg.png");
-	background-color: #7080D7;
+	width: 66%;
+	max-width: 66%;
+	/*background-image:url("contentbg.png");
+	background-color: #7080D7;*/
 	float: left;
 	border-radius: 5px;
-	height: 100%;
+	height: auto;
 	margin-bottom: 1%;
 }
 
@@ -185,22 +180,40 @@ div, header, article, aside {
 }
 
 #sidebar {
-	max-width: 17%;
-	background-image:url("sidebarbg.png");
-	background-color: #37B6CE;
+	width: 24;
+	max-width: 24%;
+	/*background-image:url("sidebarbg.png");
+	background-color: #37B6CE;*/
 	float: right;
 	border-radius: 5px;
-	height: 100%;
+	height: auto;
+	margin-bottom: 1%;
 }
+
+.sidebar {
+	border-top: 2px solid #7080D7;
+	padding-top: 10%;
+	margin-bottom: 10%;
+}
+
+.sidebar:first-child {
+	border: none;
+	padding-top: 0%;
+}
+	
 
 #footwrapper {
 	clear: both;
 	padding: 0%;
-	max-width: 950px;
+	max-width: 100%;
 	margin: 0%;
-	height: 200px;
+
+	background-image:url("footerbg.png");
+	background-color: #956BD6;
 	
 	border-radius: 5px;
+	
+	margin-bottom: 1%;
 }
 
 .footer {
@@ -215,8 +228,7 @@ div, header, article, aside {
 	text-overflow:clip;
 	
 	border-radius: 5px;
-	background-image:url("footerbg.png");
-	background-color: #956BD6;
+	
 	
 	/* The other way to create columns:
 	
